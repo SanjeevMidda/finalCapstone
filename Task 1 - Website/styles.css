@@ -1,0 +1,201 @@
+/* 1 */
+body{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2 */
+.mainPageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 3 */
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 4 */
+h2{
+    margin-right: -20px;
+    font-size: 1.2rem;
+}
+
+/* 5 */
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+/* 6 */
+li{
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+p{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* 7 */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* 8 */
+a:hover{
+    color: orangered;
+}
+
+/* 9 */
+*{
+    margin: 0px;
+    font-family: Helvetica, sans-serif;
+}
+
+/* 10 */
+#block{
+    background-color: blue;
+    width: 90vw;
+    height: 33vh;
+    margin-top: 10px;
+}
+
+
+/* Styling for other pages */
+/* 11 */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* 12 */
+.left, .middle, .right{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+    margin: 10px;
+    flex: 1 1 0;
+    height: 100vh;
+}
+
+/* 13 */
+.fact1, .fact2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+/* 14 */
+.fact1 p, .fact2 p{
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+/* 15 */
+.fact2{
+    background-color: orangered;
+}
+
+/* 16 */
+img{
+    width:20vw;
+    height: 20vh;
+    border-radius: 10px;
+}
+
+/* 17 */
+form{
+    margin-top: -20px;
+}
+
+/* 18 */
+.backHome{
+    border-radius: 50%;
+    background-color: blue;
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    transition: transform 0.5s;
+}
+
+.backHome:hover{
+    transform: scale(1.1);
+}
+
+.backHome a{
+    color: white;
+}
+
+.backHome a:hover{
+    color: orange;
+}
+
+/* 19 */
+blockquote{
+    text-align: center;
+    color: orangered;
+}
+
+/*
+    Thinking
+        1. Setting our body to a display of flex, to ensure the contents inside can be aligned correctly, and setting it's height too so we can overide the default height setting of auto. This also allows us to center our items directly in the middle of the viewport.
+
+        2.For our homepage, I've created a class with a name of "mainContainer". This will hold all my content on teh mainscreen, such as the blue block, and links. Again, this has been given a display of flex for alignment purposes. 
+
+        3. Our navigation has been made responsive for different screen sizes. And we have set the flexbox properties to center to ensure everything is nicely aligned and centered. 
+
+        4. Our mainpage heading's "BASIC" font size has been changed to allow for changes in viewport size. Also a negative margin-right has been set for styling purposes against our link elements.
+
+        5. For styling purposes, I've removed the default bullet points from our list items, and set them to be responsive using a display property of flex.
+
+        6.  Again, for styling purposes, I've changed the size of our list items and for spacing between elements a margin of 10px. Also, the default font-size of every paragraph has been changed for styling purposes.
+
+        7. I've removed the underline from every link on the page, and given them a text color of black. This is to fit in with the general design of the website.
+
+        8. I've changed the default hover color of our "a" links. They will change to an orange color instead - for a good contrast with the rest of the website.
+
+        9. For stylistic purposes, all text will have the same font and 0px margin, unless specifically stated later in the styles.
+
+        10. We've used a div and set its width, height and color to create the blue block on our mainpage. It's been given some margin at the top so it is not too close to our links. Responsive units have been used to accommodate different viewports.
+
+        11. The next part of my css rules all deal with the extra pages in my website, the cities. So as not to re-duplicate code, and make it easer to understand, all these pages have the same styles applied and layout. First, to store all our content, I've created a div wth a class of "container". The height has been set to accommodate all our content. To align our elements inside I've set the display to flex and justify-content and align-items to center. 
+
+        12. Inside our "container", I've created three sections which divide our page "left, middle, right". Specific content will go inside each one. I've also set the flex propertiy on this to ensure our elements re-size evenly when the viewport is changed.
+
+        13. I've created 2 blocks, made them round using border-radius, set their width to ensure they don't take up too much space, and center aligned the content inside. Inside will be shown a specific fact about that page's city.
+
+        14. To let our content breath I've given it some extra padding, and set it's font color to white to give a nice contrast to the background.
+
+        15. I've changed the background color of our second block circle to indicate this is a different fact.
+
+        16. To make our images responsive they have been given a height and width set using the "vw" and "vh" measurement units. To create the slightly curved effect to the edges I've given them a border-radius of 10px.
+
+        17. To create less spacing between our form element and the elements which surround it I've used a negative margin spacing here. 
+
+        18. I've created a link which goes back to our homepage. When the user hovers over this element it becomes larger slightly, also the text changes to orange. To get the circle shape I've used border radius. again, this is responsive too.
+        
+        19. To make our quote stand out I've given it a different color to the rest of the text.
+
+ */ 

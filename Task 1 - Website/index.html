@@ -1,0 +1,61 @@
+<!-- 
+    Researched on mdn HTML tags, css selectors, Flexbox, and css properties
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
+    https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+ -->
+
+ <!-- 1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 2 -->
+    <title>Basic</title>
+
+    <!-- 3 -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<!-- 4 -->
+<body>
+    <div class="mainPageContainer">
+        <!-- 5 -->
+        <nav>
+            <h2>BASIC</h2>
+
+            <!-- 6 -->
+            <ul class="links">
+                <li><a href="seoul.html">SEOUL</a></li>
+                <li><a href="london.html">LONDON</a></li>
+                <li><a href="paris.html">PARIS</a></li>
+                <li><a href="tokyo.html">TOKYO</a></li>
+                <li><a href="newYork.html">NEW YORK</a></li>
+                <li><a href="shanghai.html">SHANGHAI</a></li>
+            </ul>
+        </nav>
+
+        <!-- 7 -->
+        <div id="block"></div>
+    </div>
+</body>
+</html>
+
+<!-- 
+    Thinking
+        This website contains information and photos about some places I have visited in the world.
+        1. Basic html boilerplate, so our browser know its dealing with a html document.
+        2. Name of our website displayed in the browser tab, and for accesibility and seo purposes. 
+        3. Link to our external css styles. Without this we wouldn't be able to style our css.
+        4. Our "mainPageContainer" element holds our content and used for layout purposes - added a value of flex to this.
+        5. A "Nav" tag used to hold our navigation elements and a "h2" title.
+        6. An "ul" created with several items. Used the "a" tag to link to other pages within our website.
+        7. A "div" created with an id of "block". This allowed me to create the blue,rectangular shape using css.
+
+        Note: I originally placed the links to the other countries in a folder called "countries", however when opening the page without using live server, the pages wouldn't load. So I have placed all files in the same directory, as Dropbox doesn't allow access to these files otherwise. In a production setting, I of course, would have placed these in their own folder.
+ -->
